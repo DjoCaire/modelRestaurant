@@ -100,3 +100,24 @@ scroll.reveal('text-Apropos',{
             duration: 2000,
             origin: 'top',
             distance: '50px'});
+
+
+
+        
+window.onscroll = function() {
+    afficherOuMasquerBouton();
+};   
+function afficherOuMasquerBouton() {
+    var boutonRetourHaut = document.getElementById("boutonRetourHaut");
+
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        boutonRetourHaut.style.display = "block";
+    } else {
+        boutonRetourHaut.style.display = "none";
+    }
+    }
+
+    function retourEnHaut() {
+        document.body.scrollTop = 0; // Pour les navigateurs Safari
+        document.documentElement.scrollTop = 0; // Pour les autres navigateurs
+    }
