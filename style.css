@@ -93,11 +93,15 @@ ul >li {
     backdrop-filter: blur(10px);
     border-radius: 5px ;
     min-height: 40vh;
-    min-width: 40vw;
-    text-decoration: underline;
+    width: 60%;
+    flex-direction: column;
+    padding: 5px;
 }
 .titre > h1{
     font-size: 5vh;
+}
+.titre>h2{
+    text-decoration: underline;
 }
 .bulles {
     display: flex;
@@ -335,6 +339,8 @@ footer{
         margin-left: 50px;
     }
     .titre{
+        min-height: 20vh;
+        width: 60%;
         z-index: 0;
     }
     nav{
@@ -374,6 +380,9 @@ footer{
     .platFav{
         
         grid-area: 3/1;
+    }
+    #menu{
+        grid-template-columns: none;
     }
     #carroussel{
         border: 1px solid black;
